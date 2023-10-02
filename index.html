@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 <!-- <link rel="stylesheet" type="text/css" href="style.css">   -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -34,6 +35,17 @@
 .carousel-indicators .active {
   background-color: rgba(0, 0, 0, 0.9);
 }
+@media (max-width: 768px) {
+      .carousel-inner {
+        width: 100%;
+        max-width: none;
+      }
+
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
 .navbar-light .navbar-nav .nav-link {
     color: green;
   }
